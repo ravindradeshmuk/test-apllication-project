@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import A from './components/A'
+//import Addtodo from './components/Addtodo'
+//import Navbar from './components/Navbar'
+//  import Record from './components/Record'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div style={{textAlign:'center', padding:"1rem"}}>
+      <h1 style={{fontSize:"50px"}}>TEST APPLICATION</h1>
+      <A/>
+   {/* <Navbar/> */}
+   
+   {/* <Record/> */}
     </div>
-  );
+    <div>
+    {/* <Addtodo/> */}
+   
+    </div>
+    </>
+  )
 }
 
-export default App;
+export default App
